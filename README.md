@@ -3,7 +3,11 @@
 > ⚡ *Your gateway to mastering the shell, automating workflows, and taming structured data.*
 
 ---
-## 💡 Quote of Inspiration > *“Intelligence is the ability to avoid doing work, yet getting the work done.”* > — Linus Torvalds This repository embodies that principle: mastering the command line to automate, simplify, and achieve more with less effort.
+## 💡 Quote of Inspiration 
+
+*“Intelligence is the ability to avoid doing work, yet getting the work done.”* > — Linus Torvalds
+
+This repository embodies that principle: mastering the command line to automate, simplify, and achieve more with less effort.
 
 ---
 
