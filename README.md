@@ -1,2 +1,50 @@
-# grokking-command-line
+## grokking-command-line
 This repository is dedicated to personal learning &amp; mastering all required command line concepts.
+### 📚 Grokking the Command Line
+
+Welcome to **Grokking Command Line** — a curated collection of **Linux command‑line utilities, Bash scripting demos, and structured data manipulation tools**.  
+This repository is designed as a **hands‑on learning playground** for anyone who wants to master the shell, automate workflows, and manipulate structured data formats like YAML and JSON.
+
+---
+
+#### ✨ Highlights
+
+- 🖥️ **Bash Scripting**: Learn loops, conditionals, arguments, variables, exit codes, and more through practical scripts.  
+- ⚙️ **Core Linux Commands**: Explore essential tools for file operations, networking, process management, resource monitoring, scheduling, and text manipulation.  
+- 📊 **Structured Data Utilities**: Work with YAML, JSON, and JSONPath using tools like `jq` and `yq`.  
+- 🛠️ **Helper Scripts**: Utility scripts (like `tree.py`) to visualize and manage repository structures.  
+
+---
+
+#### 📂 Repository Structure
+
+```text
+grokking-command-line
+├── README.md
+├── bash-scripting
+│   ├── arguments/           # Handling script arguments
+│   ├── backup-script/       # Simple backup automation
+│   ├── basic-math/          # Arithmetic in Bash
+│   ├── cron/                # Scheduling with cron
+│   ├── data-streams/        # stdout, stderr, redirection
+│   ├── exercises/           # Practice problems
+│   ├── exit-codes/          # Exit status handling
+│   ├── for-loops/           # Iteration with for loops
+│   ├── if-statement/        # Conditional logic
+│   ├── introduction/        # Basics of Bash scripting
+│   ├── script-storage/      # Notes and reusable snippets
+│   ├── update-script/       # System update automation
+│   ├── variables/           # Working with variables
+│   └── while-loops/         # Iteration with while loops
+├── core-linux-commandline
+│   ├── file-ops/            # find, tree
+│   ├── networking/          # curl, dig, hostname, ip, ping, ss, wget
+│   ├── process-mgmt/        # ps
+│   ├── resource-monitoring/ # df, du
+│   ├── scheduling/          # cron, watch
+│   ├── shellenv-basics/     # alias, path
+│   └── text-manipulation/   # awk, grep, sed, tee, vi
+├── helperScripts
+│   └── tree.py              # Custom tree generator (ignores .git)
+└── structured-data-utils
+    └── yaml/                # Structured data querying/manipulation
