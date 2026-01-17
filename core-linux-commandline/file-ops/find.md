@@ -37,12 +37,10 @@ What to do with matches.
 - `-ls` → detailed listing  
 
 ## Example Usage
-- For example the following `find` command finds the files in `/var/log` folder (within a single recursion depth), matching with `*.log` name and executes an `ls` operation on those serach results.
+## Example Usage
 
-```bash
-ubuntu:~$ find /var/log -maxdepth 1 -type f -name "*.log" -exec ls {} +
-
-/var/log/alternatives.log  /var/log/dpkg.log        /var/log/ubuntu-advantage-apt-hook.log
-/var/log/auth.log          /var/log/fontconfig.log  /var/log/updater_stderr.log
-/var/log/bootstrap.log     /var/log/kern.log        /var/log/updater_stdout.log
-```
+- `find . -name "*.log"` → Find all `.log` files in the current directory
+- `find /path/to/search -type f -size +1M` → Find files over 1MB in `/path/to/search`
+- `find /path/to/search -type f -mmin -10` → Find files modified less than 10 minutes ago
+- `find /path/to/search -type f -mtime -1` → Find files modified less than 1 day ago
+- `find /path/to/search -type d` → Find directories instead of files
