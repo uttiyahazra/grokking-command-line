@@ -16,20 +16,20 @@ else
 fi
 ```
 
-- if … fi → always closes with fi (think: “if backwards”).
+- `if … fi` → always closes with fi (think: “if backwards”).
 
-- elif → shorthand for “else if”.
+- `elif` → shorthand for “else if”.
 
-- then → must follow the condition (same line or next line).
+- `then` → must follow the condition (same line or next line).
 
 ## 🧮 Numeric vs String Tests
 
-- Numbers → use -eq, -ne, -lt, -le, -gt, -ge
+- `Numbers` → use -eq, -ne, -lt, -le, -gt, -ge
 
 ```bash
 if [[ $x -eq 5 ]]; then echo "Equal"; fi
 ```
-- Strings → use =, ==, !=
+- `Strings` → use =, ==, !=
 
 ```bash
 if [[ $str == "hello" ]]; then echo "Match"; fi
@@ -42,25 +42,25 @@ if [[ $str == "hello" ]]; then echo "Match"; fi
 Quoting numbers is optional, but quoting strings is mandatory.
 
 ## 📂 File Tests
-- -e file → exists
+- `-e file` → exists
 
-- -f file → regular file
+- `-f file` → regular file
 
-- -d dir → directory
+- `-d dir` → directory
 
-- -r file → readable
+- `-r file` → readable
 
-- -w file → writable
+- `-w file` → writable
 
-- -x file → executable
+- `-x file` → executable
 
 ```bash
 if [[ -d /etc ]]; then echo "Directory exists"; fi
 ```
 
 ## 🔗 Compound Conditions
-- OR → ||
-- AND → &&
+- `OR` → ||
+- `AND` → &&
 
 ```bash
 if [[ $x -eq 1 || $x -eq 3 ]]; then

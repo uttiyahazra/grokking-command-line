@@ -6,12 +6,12 @@
 ....
 #Append the existing content of `/etc/profile` with following content
 
-if [ "$USER" == "root" ]
+if [[ "$USER" == "root" ]]
 then
     echo "***********************************************"
     echo "👑 Welcome, mighty root! Handle with care..."
     echo "***********************************************"
-elif [ "$USER" == "uttiya" ]
+elif [[ "$USER" == "uttiya" ]]
 then
     echo "Welcome Uttiya! Know that Linux is future-proof no bluff technology."
 else
