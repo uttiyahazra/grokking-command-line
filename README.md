@@ -5,7 +5,8 @@
 ---
 ## 💡 Quote of Inspiration 
 
-*“Intelligence is the ability to avoid doing work, yet getting the work done.”* > — Linus Torvalds
+*“Intelligence is the ability to avoid doing work, yet getting the work done.”*  
+— Linus Torvalds
 
 This repository embodies that principle: mastering the command line to automate, simplify, and achieve more with less effort.
 
@@ -16,7 +17,8 @@ This repository embodies that principle: mastering the command line to automate,
 
 - 🖥️ **Linux command‑line utilities** — the everyday tools every power user should know  
 - 🔄 **Bash scripting demos** — practical scripts for loops, conditionals, arguments, and automation  
-- 📊 **Structured data manipulation** — YAML with `jq` and `yq`  
+- 🐍 **Python scripting for DevOps** — control structures, modules, and real‑time automation examples  
+- 📊 **Structured data manipulation** — YAML & JSON with `jq`, `yq`, and Python libraries  
 
 ---
 
@@ -24,8 +26,9 @@ This repository embodies that principle: mastering the command line to automate,
 This repository is designed as a **hands‑on learning playground** for anyone who wants to:
 
 - 🏗️ **Master the command line** — build fluency with foundational commands  
-- ⚙️ **Automate workflows in shell** — reduce repetitive tasks with scripts  
+- ⚙️ **Automate workflows in shell & Python** — reduce repetitive tasks with scripts  
 - 📑 **Manipulate structured data formats** — YAML & JSON for DevOps, Kubernetes, and beyond  
+- 📈 **Monitor and manage systems programmatically** — using Python modules like `psutil`, `logging`, and `subprocess`  
 
 ---
 
@@ -33,7 +36,8 @@ This repository is designed as a **hands‑on learning playground** for anyone w
 
 - 🖥️ **Bash Scripting**: Learn loops, conditionals, arguments, variables, exit codes, and more through practical scripts.  
 - ⚙️ **Core Linux Commands**: Explore essential tools for file operations, networking, process management, resource monitoring, scheduling, and text manipulation.  
-- 📊 **Structured Data Utilities**: Work with YAML, JSON, and JSONPath using tools like `jq` and `yq`.  
+- 🐍 **Python Scripting**: Discover Python constructs (loops, conditionals, functions, modules) and DevOps‑oriented libraries (`os`, `psutil`, `logging`, `subprocess`, `smtplib`, `shutil`, `pandas`, `pyyaml`, `re`, `platform`, `crontab`).  
+- 📊 **Structured Data Utilities**: Work with YAML, JSON, and JSONPath using both CLI tools (`jq`, `yq`) and Python libraries.  
 - 🛠️ **Helper Scripts**: Utility scripts (like `tree.py`) to visualize and manage repository structures.  
 
 ---
@@ -42,31 +46,36 @@ This repository is designed as a **hands‑on learning playground** for anyone w
 
 ```text
 grokking-command-line
-├── README.md
-├── bash-scripting
-│   ├── arguments/           # Handling script arguments
-│   ├── backup-script/       # Simple backup automation
-│   ├── basic-math/          # Arithmetic in Bash
-│   ├── cron/                # Scheduling with cron
-│   ├── data-streams/        # stdout, stderr, redirection
-│   ├── exercises/           # Practice problems
-│   ├── exit-codes/          # Exit status handling
-│   ├── for-loops/           # Iteration with for loops
-│   ├── if-statement/        # Conditional logic
-│   ├── introduction/        # Basics of Bash scripting
-│   ├── script-storage/      # Notes and reusable snippets
-│   ├── update-script/       # System update automation
-│   ├── variables/           # Working with variables
-│   └── while-loops/         # Iteration with while loops
-├── core-linux-commandline
-│   ├── file-ops/            # find, tree
-│   ├── networking/          # curl, dig, hostname, ip, ping, ss, wget
-│   ├── process-mgmt/        # ps
-│   ├── resource-monitoring/ # df, du
-│   ├── scheduling/          # cron, watch
-│   ├── shellenv-basics/     # alias, path
-│   └── text-manipulation/   # awk, grep, sed, tee, vi
-├── helperScripts
-│   └── tree.py              # Custom tree generator (ignores .git)
-└── structured-data-utils
-    └── yaml/                # Structured data querying/manipulation
+├── bash-scripting/              # Bash demos: loops, conditionals, cron, functions, real-time scripts
+├── linux-cmdline-essentials/    # Core Linux utilities: networking, file ops, process mgmt, resource monitoring
+├── python-scripting/            # Python constructs & DevOps modules
+│   ├── data-types/              # Python primitives & collections
+│   ├── variables/               # Variable scope & usage
+│   ├── if-statement/            # Conditional checks (healthcheck.py, sysload.py)
+│   ├── for-loops/               # Iteration (service_status.py)
+│   ├── while-loops/             # Retry logic (retry.py)
+│   ├── match-statement/         # Environment branching (deploy_env.py)
+│   ├── functions/               # Function definitions & usage
+│   ├── methods/                 # Class methods (service_manager.py)
+│   ├── modules/                 # Custom modules & imports
+│   ├── exception-handling/      # Safe config loading & error handling
+│   ├── regex/                   # Log scanning with regex
+│   ├── real-time-scripts/       # DevOps modules in action:
+│   │   └── modules-for-devops/
+│   │       ├── os/              # File ops, system checks
+│   │       ├── psutil/          # Resource monitoring
+│   │       ├── logging/         # Structured logging
+│   │       ├── subprocess/      # Command execution
+│   │       ├── smtplib/         # Email alerts
+│   │       ├── shutil/          # Backups & archiving
+│   │       ├── pandas/          # Log analysis & reporting
+│   │       ├── pyyaml/          # YAML parsing & config mgmt
+│   │       ├── json/            # JSON parsing & config mgmt
+│   │       ├── re/              # Regex log parsing
+│   │       ├── platform/        # System introspection
+│   │       ├── crontab/         # Job scheduling
+│   │       └── sys/             # CLI args, exit codes, runtime info
+├── structured-data-utils/       # YAML & JSON utilities (json.md, yaml.md, jsonpath.md)
+├── helperScripts/               # Utility helpers (tree.py)
+└── README.md
+```
