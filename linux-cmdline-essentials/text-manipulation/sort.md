@@ -50,10 +50,10 @@ What to do with the input/output.
 ## Example Usage
 
 - `sort names.txt` → Sort names alphabetically  
-- `sort -r names.txt` → Sort names in reverse order  
+- `sort -r names.txt` → Sort names in reverse order (largest first) 👉 By default, sort compares the first column of each line.
 - `sort -n numbers.txt` → Sort numbers numerically  
 - `sort -u names.txt` → Sort and remove duplicates  
-- `sort -k 2 data.txt` → Sort by second column  
+- `sort -kr 2 data.txt` → Sort by second column in reverse order (largest first of 2nd column value)
 - `sort -t , -k 3 file.csv` → Sort CSV by third column  
 - `cat data.txt | sort | uniq` → Sort and remove duplicates in one pipeline  
 - `sort file.txt -o sorted.txt` → Save sorted output to sorted.txt  

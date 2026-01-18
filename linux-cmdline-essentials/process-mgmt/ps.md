@@ -27,8 +27,8 @@ Control the type and detail of process information displayed.
 - `ps -u username` → show processes for a specific user  
 - `ps -p 1234` → show info about process with PID 1234  
 - `ps -ef | grep nginx` → find all processes related to "nginx"  
-- `ps --sort=-%mem | head` → show top memory-consuming processes  
-- `ps --sort=-%cpu | head` → show top CPU-consuming processes  
+- `ps --sort=-%mem | head -n5` → show top 5 memory-consuming processes  
+- `ps --sort=-%cpu | head -n5` → show top 5 CPU-consuming processes  
 
 ---
 

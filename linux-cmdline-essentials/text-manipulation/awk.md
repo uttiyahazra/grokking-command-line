@@ -48,3 +48,5 @@ What to do with matched lines.
 - `awk 'NR==1 {print $0}' file.txt` → Print only the first line (header)  
 - `awk 'NR>1 {print $1}' file.txt` → Skip header and print first column  
 - `awk '{print NR, $0}' file.txt` → Print line number and full line  
+- `echo "foo bar baz qux" | awk '{print "Second: "$2" / Third: "$3}'` → Prints output in format `Second: bar / Third: baz`
+
