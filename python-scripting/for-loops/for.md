@@ -108,6 +108,18 @@ for env in ["Dev", "Prod"]:
         print(f"Checking {env}-{tier} health...")
 ```
 
+### Iterating over array
+```python
+import numpy as np
+
+# Create a NumPy array
+numbers = np.array([10, 20, 30, 40])
+
+for num in numbers:
+    print(f"Value: {num}")
+
+```
+
 ### Advanced Shell Pipe Integration
 ```python
 import subprocess

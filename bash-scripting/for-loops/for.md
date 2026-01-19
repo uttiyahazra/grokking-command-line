@@ -111,3 +111,19 @@ for x in A B; do
     done
 done
 ```
+#### Iterating over array
+
+- Bash supports indexed arrays, which can be looped over using the `${array[@]}` expansion.
+
+```bash
+# Define an array
+servers=("web01" "web02" "db01")
+
+# Iterate over array elements
+for srv in "${servers[@]}"; do
+    echo "Connecting to $srv..."
+done
+```
+
+👉 Use `"${array[@]}"` to preserve spaces in elements (safe Variable expansion)
+👉 `${!array[@]}` gives the list of indices if you need to loop over positions instead of values.
