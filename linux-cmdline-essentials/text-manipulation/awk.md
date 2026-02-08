@@ -107,10 +107,10 @@ Let's consider now this `df -h` sample output:
     D:\             213G  269M  212G   1% /mnt/d
     tmpfs           759M   20K  759M   1% /run/user/1000
 ```
-- `df -h|awk '$1 == "/dev/sdd" {print $1 " has total disk-size of " $2 " and uses " $2 " of it."}'`
+- `df -h|awk '$1 == "/dev/sdd" {print $1 " has total disk-size of " $2 " and uses " $3 " of it."}'`
    → This piped awk operation 1st looks for match to value "/dev/sdd" and enables a custom user-defined print out with intended field value."
 
    In this case, its output looks like:
    ```bash
-   /dev/sdd has total disk-size of 1007G and uses 1007G of it.
+   /dev/sdd has total disk-size of 1007G and uses 2.1G of it.
    ```
