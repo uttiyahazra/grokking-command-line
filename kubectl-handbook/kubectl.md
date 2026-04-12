@@ -272,7 +272,12 @@ This is the fastest way to generate correct YAML under pressure.
 Mnemonic: **S M S** → Status → Metadata → Spec.
 
 ---
+# 🔎 Custom-Columns Quick Reference
 
+`kubectl get pods -o custom-columns=NAME:.metadata.name,STATUS:.status.phase`  
+`kubectl get pods -o custom-columns=NAME:.metadata.name,IMAGE:.spec.containers[*].image,MEM_LIM:.spec.containers[*].resources.limits.memory`
+
+---
 # 🗂️ Namespace Operations
 
 `kubectl get ns`  
