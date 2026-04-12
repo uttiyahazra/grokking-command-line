@@ -115,9 +115,12 @@ Mnemonic: **L A S A** → Label → Annotate → Select → Annotate.
 `kubectl logs -f mypod`  
 `kubectl logs <pod> --previous`  
 `kubectl exec -it mypod -- sh`  
-`kubectl exec -it web -c nginx -- /bin/bash`  
+`kubectl exec -it web -c nginx -- /bin/bash`
+`kubectl exec <pod> -- wget -qO- http://<svc>:<port>`
+`kubectl exec <pod> -- curl -s http://<svc>:<port>`
 `kubectl debug mypod -it --image=busybox`  
 `kubectl cp mypod:/var/log/app.log ./app.log`  
+`kubectl events -A|grep error` 
 
 **Conceptual Note:**  
 `--previous` shows logs from the **last crashed container instance**.
@@ -153,6 +156,7 @@ CKAD Cue: Service not working → **L‑S‑E** → Labels → Selectors → End
 `kubectl describe deploy myapp`  
 `kubectl get deploy -o wide`  
 `kubectl scale deploy myapp --replicas=5`  
+`kubectl rollout restart deploy myapp`
 `kubectl rollout status deploy myapp`  
 `kubectl rollout history deploy myapp`  
 `kubectl rollout undo deploy myapp`  
@@ -358,7 +362,7 @@ Mnemonic: **S‑A‑V** → StorageClass, AccessMode, Volume.
 ## 🔐 NetworkPolicy Blocking
 `kubectl get netpol`  
 `kubectl describe netpol`  
-`kubectl exec -it <pod> -- wget <svc>:<port>`  
+`kubectl exec -it <pod> -- wget -q0- <svc>:<port>` 
 
 Mnemonic: **I‑E‑N** → Ingress, Egress, NamespaceSelector.
 
