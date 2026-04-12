@@ -182,6 +182,7 @@ CKAD Cue: Deployment not updating → check **image**, **strategy**, **rollout**
 
 `kubectl get secrets`  
 `kubectl describe secret <secret>`  
+`kubectl get secret <secret> -o jsonpath='{.data.token}' | base64 --decode`
 `kubectl create secret generic creds --from-literal=user=utt --from-literal=pass=123`  
 `kubectl create secret generic creds --from-file=./config`  
 
